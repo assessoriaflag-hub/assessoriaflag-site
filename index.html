@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flag — Assessoria de Marketing de Performance</title>
+  <meta name="description" content="Agência Flag: marketing de performance orientado por dados, em Volta Redonda - RJ. Planos de gestão de tráfego, criação e growth com acompanhamento em tempo real.">
+
+  <meta name="facebook-domain-verification" content="COLE_AQUI_O_CODIGO_DO_FACEBOOK" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --black:#000000;
+    --near-black:#181717;
+    --off-white:#eeeded;
+          --gray:#545454;
+    --bg:var(--black);
+    --bg-soft:#111010;
+    --card:var(--near-black);
+    --border:#2c2c2c;
+    --white:var(--off-white);
+    --muted:#8f8f8f;
+    --radius:14px;
+}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg);color:var(--white);font-family:'Inter',Arial,Helvetica,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:Arial,Helvetica,sans-serif; font-weight:800; letter-spacing:-0.01em;}
+  .brand{font-family:'Michroma','Arial Narrow',Arial,sans-serif; font-weight:400; letter-spacing:.04em;}
+  a{color:inherit;text-decoration:none;}
+  img,svg{max-width:100%;display:block;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+  .eyebrow{display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:14px;}
+  .eyebrow::before{content:""; width:8px; height:8px; background:var(--white); display:inline-block; clip-path:polygon(0 0,100% 50%,0 100%);}
+  header{position:sticky; top:0; z-index:50; background:rgba(0,0,0,.86); backdrop-filter:blur(10px); border-bottom:1px solid var(--border);}
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1120px; margin:0 auto;}
+  .logo{ display:flex; align-items:center; gap:10px; font-size:19px; }
+  .logo svg{width:22px;height:24px;}
+  .navlinks{ display:flex; gap:28px; font-size:14px; font-weight:500; color:var(--muted);}
+  .navlinks a:hover{color:var(--white);}
+  .cta{background:var(--off-white); color:#0a0a0a; font-weight:700; font-size:14px; padding:11px 20px; border-radius:999px; white-space:nowrap; transition:transform .15s ease, opacity .15s ease;}
+  .cta:hover{transform:translateY(-1px); opacity:.85;}
+  .navwrap-mobile-hide{display:flex; align-items:center; gap:28px;}
+  @media (max-width:760px){ .navlinks{display:none;} }
+  .hero{ padding:96px 0 72px; border-bottom:1px solid var(--border); position:relative; overflow:hidden;}
+  .hero-mark{position:absolute; right:-40px; top:-60px; width:420px; height:460px; opacity:.05; pointer-events:none;}
+  .hero h1{ font-size:clamp(34px,5.4vw,58px); line-height:1.06; max-width:820px; position:relative; z-index:1;}
+  .hero h1 .hl{ position:relative; display:inline-block;}
+  .hero h1 .hl::after{ content:""; position:absolute; left:0; right:0; bottom:6px; height:10px; background:var(--near-black); z-index:-1;}
+  .hero p.lead{ font-size:18px; color:var(--muted); max-width:600px; margin-top:22px; position:relative; z-index:1;}
+  .hero-ctas{ display:flex; gap:14px; margin-top:34px; flex-wrap:wrap; position:relative; z-index:1;}
+  .btn-primary{ background:var(--off-white); color:#0a0a0a; font-weight:700; padding:15px 26px; border-radius:10px; font-size:15px;}
+  .btn-primary:hover{opacity:.85;}
+  .btn-ghost{ border:1px solid var(--border); padding:15px 26px; border-radius:10px; font-weight:600; font-size:15px; color:var(--white);}
+  .btn-ghost:hover{border-color:var(--gray); background:var(--bg-soft);}
+  .hero-stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:640px; margin-top:56px; padding-top:32px; border-top:1px solid var(--border); position:relative; z-index:1;}
+  .hero-stats .num{ font-family:Arial,Helvetica,sans-serif; font-weight:900; font-size:28px;}
+  .hero-stats .lbl{ font-size:13px; color:var(--muted); margin-top:4px;}
+  section{ padding:80px 0; border-bottom:1px solid var(--border);}
+  .section-head{ max-width:640px; margin-bottom:48px;}
+  .section-head h2{ font-size:clamp(26px,3.6vw,38px);}
+  .section-head p{ color:var(--muted); margin-top:14px; font-size:16px;}
+  .about-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:start;}
+  @media (max-width:860px){ .about-grid{grid-template-columns:1fr;} }
+  .about-grid p{ color:#cfcfcf; margin-bottom:16px; font-size:16px;}
+      .pillars{ display:flex; flex-direction:column; gap:18px;}
+  .pillar{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:20px 22px;}
+  .pillar b{ display:block; font-size:15px; margin-bottom:4px;}
+  .pillar span{ color:var(--muted); font-size:14px;}
+  .plans{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  @media (max-width:900px){ .plans{grid-template-columns:1fr;} }
+  .plan{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:30px 26px; display:flex; flex-direction:column;}
+  .plan.featured{ border-color:var(--off-white); box-shadow:0 0 0 1px var(--off-white) inset;}
+  .plan-tag{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:10px;}
+  .plan.featured .plan-tag{color:var(--off-white);}
+  .plan h3{ font-size:22px; margin-bottom:8px;}
+  .plan .desc{ color:var(--muted); font-size:14px; margin-bottom:22px; min-height:40px;}
+  .plan ul{ list-style:none; display:flex; flex-direction:column; gap:12px; margin-bottom:28px; flex:1;}
+  .plan li{ font-size:14.5px; color:#dcdcdc; padding-left:22px; position:relative;}
+    .plan li::before{ content:"▸"; position:absolute; left:0; color:var(--off-white); font-weight:700;}
+  .plan a{ text-align:center; padding:13px; border-radius:9px; font-weight:700; font-size:14px; border:1px solid var(--border);}
+  .plan.featured a{ background:var(--off-white); color:#0a0a0a; border-color:var(--off-white);}
+  .plan:not(.featured) a:hover{border-color:var(--gray);}
+  .method-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px;}
+  @media (max-width:900px){ .method-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .method-grid{grid-template-columns:1fr;} }
+  .method-card{ background:var(--bg-soft); border:1px solid var(--border); border-radius:var(--radius); padding:22px;}
+  .method-card .n{ font-family:Arial,Helvetica,sans-serif; font-weight:900; font-size:26px; color:var(--off-white); margin-bottom:10px;}
+  .method-card h3{ font-size:16px; margin-bottom:8px;}
+  .method-card p{ font-size:13.5px; color:var(--muted);}
+  .tool-banner{margin-top:40px; background:linear-gradient(135deg, rgba(238,237,237,.06), rgba(84,84,84,.10)); border:1px solid var(--border); border-radius:var(--radius); padding:28px 30px; display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap;}
+  .tool-banner h3{font-size:18px; margin-bottom:6px; display:flex; align-items:center; gap:8px;}
+  .tool-banner h3 svg{width:12px;height:13px;}
+  .tool-banner p{color:var(--muted); font-size:14px; max-width:480px;}
+  .clients-grid{ display:flex; flex-wrap:wrap; gap:14px;}
+  .client-chip{background:var(--card); border:1px solid var(--border); border-radius:999px; padding:12px 22px; font-size:14px; font-weight:600; color:#dcdcdc;}
+    .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+  @media (max-width:800px){ .contact-grid{grid-template-columns:1fr;} }
+  .contact-item{ display:flex; gap:16px; margin-bottom:26px;}
+  .contact-item .ic{ width:42px; height:42px; border-radius:10px; background:var(--card); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .contact-item b{display:block; font-size:15px; margin-bottom:3px;}
+  .contact-item span, .contact-item a{color:var(--muted); font-size:14px;}
+  .placeholder{ color:#c9a227 !important; }
+      .contact-card{ background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:30px;}
+  .contact-card h3{font-size:18px; margin-bottom:8px;}
+  .contact-card p{color:var(--muted); font-size:14px; margin-bottom:22px;}
+  footer{ padding:34px 0; }
+  .footer-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; color:var(--muted); font-size:13px;}
+  .footer-brand{ display:flex; align-items:center; gap:8px; color:var(--white); font-size:15px;}
+  .footer-brand svg{width:13px;height:14px;}
+</style>
+  </head>
+  <body>
+
+  <header>
+    <div class="nav">
+      <a href="#top" class="logo">
+        <svg viewBox="0 0 474 520" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18,0 L474,0 L346,159 L18,159 Q0,159 0,141 L0,18 Q0,0 18,0 Z" fill="#eeeded"/>
+          <path d="M18,198 L186,198 L0,520 L0,216 Q0,198 18,198 Z" fill="#eeeded"/>
+        </svg>
+        <span class="brand">FLAG</span>
+      </a>
+      <div class="navwrap-mobile-hide">
+        <nav class="navlinks">
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#metodologia">Metodologia</a>
+          <a href="#clientes">Clientes</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <a class="cta" href="#contato">Falar com a Flag</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="top" class="hero">
+    <svg class="hero-mark" viewBox="0 0 474 520" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18,0 L474,0 L346,159 L18,159 Q0,159 0,141 L0,18 Q0,0 18,0 Z" fill="#eeeded"/>
+      <path d="M18,198 L186,198 L0,520 L0,216 Q0,198 18,198 Z" fill="#eeeded"/>
+    </svg>
+    <div class="wrap">
+      <div class="eyebrow">Assessoria de Marketing de Performance</div>
+    <h1>Marketing que <span class="hl">vende</span>, não que só enfeita.</h1>
+    <p class="lead">A Flag é a assessoria de marketing de Volta Redonda que trata cada real investido como uma decisão de negócio: tráfego, criação e comercial trabalhando juntos, com resultado medido em tempo real.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#contato">Solicitar diagnóstico gratuito</a>
+      <a class="btn-ghost" href="#servicos">Ver planos</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="num">100%</div>
+        <div class="lbl">Contas com acompanhamento de performance em tempo real</div>
+        </div>
+        <div>
+          <div class="num">3</div>
+          <div class="lbl">Planos sob medida, do tráfego ao growth completo</div>
+      </div>
+      <div>
+        <div class="num">4DX</div>
+        <div class="lbl">Metodologia de execução por trás de cada meta</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap about-grid">
+      <div>
+        <div class="eyebrow">Quem é a Flag</div>
+      <h2>Uma assessoria construída em cima de processo e dado, não de achismo.</h2>
+        <p>A Flag é uma agência de marketing de performance com sede em Volta Redonda (RJ), fundada para resolver um problema simples: a maioria das empresas paga por marketing sem saber, de verdade, o que aquilo está gerando em vendas.</p>
+      <p>Trabalhamos com tráfego pago, criação e estrutura comercial de forma integrada, sob a metodologia 4DX (4 Disciplinas da Execução): cada cliente tem uma meta clara (WIG), indicadores de esforço e de resultado acompanhados semana a semana, e reuniões de cadência para corrigir rota antes que o mês termine — não depois.</p>
+        <p>Todo esse acompanhamento acontece na <b>Bússola de Performance</b>, nossa plataforma proprietária de BI: investimento, leads, custo por lead, alcance, orçamentos e faturamento, atualizados automaticamente e visíveis para o cliente a qualquer momento.</p>
+    </div>
+    <div class="pillars">
+        <div class="pillar">
+          <b>Dados acima da opinião</b>
+        <span>Toda decisão de campanha é validada por número, não por preferência estética.</span>
+      </div>
+      <div class="pillar">
+        <b>Execução acima da perfeição</b>
+          <span>Cadência semanal de acompanhamento (MCI) para ajustar o que não está performando.</span>
+      </div>
+      <div class="pillar">
+          <b>Marketing sem venda é desperdício</b>
+        <span>O funil é medido até a venda — não paramos no lead ou no clique.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Planos</div>
+        <h2>Três formas de crescer com a Flag</h2>
+        <p>Cada plano parte do mesmo princípio: tráfego bem gerido é a base, criação e estrutura comercial multiplicam o resultado. Valores e escopo são fechados sob consulta, de acordo com o momento do seu negócio.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <div class="plan-tag">Plano 1</div>
+        <h3>Performance</h3>
+          <div class="desc">Gestão de tráfego pago com foco total em geração de leads e vendas mensuráveis.</div>
+          <ul>
+            <li>Gestão de campanhas (Meta Ads)</li>
+            <li>Estrutura de funil e públicos</li>
+          <li>Acompanhamento na Bússola de Performance</li>
+          <li>Relatório e reunião mensal de resultado</li>
+          </ul>
+          <a href="#contato">Solicitar proposta</a>
+        </div>
+        <div class="plan featured">
+          <div class="plan-tag">Plano 2 · Mais escolhido</div>
+        <h3>Performance Criativa</h3>
+          <div class="desc">Tráfego + produção de criativos para escalar anúncios sem perder consistência de marca.</div>
+          <ul>
+            <li>Tudo do Plano Performance</li>
+            <li>Produção de criativos (imagem e vídeo)</li>
+            <li>Testes A/B contínuos de criativo</li>
+          <li>Cadência semanal de otimização</li>
+            <li>Check-in quinzenal de resultado</li>
+          </ul>
+          <a href="#contato">Solicitar proposta</a>
+        </div>
+        <div class="plan">
+          <div class="plan-tag">Plano 3</div>
+          <h3>Growth 360</h3>
+                      <div class="desc">Marketing e comercial operando como um só sistema, com metodologia 4DX aplicada ao seu funil.</div>
+                      <ul>
+                        <li>Tudo do Performance Criativa</li>
+                        <li>Estruturação de processo comercial</li>
+          <li>Metodologia 4DX (WIG, indicadores, MCI)</li>
+          <li>Acesso completo à Bússola de Performance</li>
+                        <li>Reunião de cadência semanal</li>
+                      </ul>
+                      <a href="#contato">Solicitar proposta</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="metodologia">
+                <div class="wrap">
+                  <div class="section-head">
+                    <div class="eyebrow">Metodologia</div>
+                    <h2>Como a Flag garante que o investimento vira resultado</h2>
+      <p>Usamos as 4 Disciplinas da Execução (4DX) para transformar meta em rotina — e a Bússola de Performance para deixar isso visível, não uma promessa.</p>
+                  </div>
+                  <div class="method-grid">
+                    <div class="method-card">
+                      <div class="n">01</div>
+                      <h3>Meta clara (WIG)</h3>
+                      <p>Definimos o objetivo mais importante do período — faturamento, leads ou vendas — antes de ligar qualquer campanha.</p>
+                    </div>
+                    <div class="method-card">
+                      <div class="n">02</div>
+                      <h3>Indicadores de esforço e resultado</h3>
+                      <p>Acompanhamos o que prevê o resultado (lead/lag measures), não só o resultado final do mês.</p>
+      </div>
+      <div class="method-card">
+                      <div class="n">03</div>
+                      <h3>Placar visível</h3>
+        <p>Todo indicador vive na Bússola de Performance — investimento, custo por lead, vendas e faturamento, sempre atualizados.</p>
+                    </div>
+                    <div class="method-card">
+                      <div class="n">04</div>
+                      <h3>Cadência de execução (MCI)</h3>
+                      <p>Reuniões curtas e recorrentes para corrigir rota durante o mês, não fazer relatório sobre o mês passado.</p>
+                    </div>
+                  </div>
+
+                  <div class="tool-banner">
+                    <div>
+                      <h3>
+                        <svg viewBox="0 0 474 520" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18,0 L474,0 L346,159 L18,159 Q0,159 0,141 L0,18 Q0,0 18,0 Z" fill="#eeeded"/>
+                          <path d="M18,198 L186,198 L0,520 L0,216 Q0,198 18,198 Z" fill="#eeeded"/>
+                        </svg>
+                        Bússola de Performance
+        </h3>
+        <p>Nossa plataforma proprietária de BI acompanha automaticamente investimento, leads, custo por resultado e faturamento de cada cliente — atualizada direto da fonte, sem planilha manual.</p>
+      </div>
+      <a class="btn-ghost" href="#contato">Quero ver a Bússola em ação</a>
+                  </div>
+                </div>
+              </section>
+
+              <section id="clientes">
+                <div class="wrap">
+                  <div class="section-head">
+                    <div class="eyebrow">Quem já cresce com a Flag</div>
+                    <h2>Marcas que confiam na nossa gestão</h2>
+    </div>
+    <div class="clients-grid">
+      <div class="client-chip">Edu & Fabi Burger</div>
+      <div class="client-chip">Playlist Personalizados</div>
+                    <div class="client-chip">Conecta Imóveis</div>
+      <div class="client-chip">Barrakana Automóveis</div>
+      <div class="client-chip">Ir.Volts Scooters</div>
+      <div class="client-chip">Bistrô Bonapraia</div>
+                    <div class="client-chip">Alex Massoterapia</div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="contato" style="border-bottom:none;">
+                <div class="wrap contact-grid">
+                  <div>
+                    <div class="eyebrow">Contato</div>
+                    <h2>Vamos falar sobre o crescimento do seu negócio</h2>
+      <p style="color:var(--muted); margin-top:14px; margin-bottom:34px;">Responda três perguntas — o que você vende, quanto já investe em marketing e qual sua meta — e te devolvemos um diagnóstico real, não um discurso genérico.</p>
+
+                    <div class="contact-item">
+                      <div class="ic">📍</div>
+                      <div><b>Onde estamos</b><span>Volta Redonda — RJ</span></div>
+                    </div>
+                    <div class="contact-item">
+                      <div class="ic">💬</div>
+                      <div><b>WhatsApp</b><br><a class="placeholder" href="#">[ COLOCAR NÚMERO DE WHATSAPP AQUI ]</a></div>
+                    </div>
+                    <div class="contact-item">
+                      <div class="ic">✉️</div>
+                      <div><b>E-mail</b><br><a class="placeholder" href="#">[ COLOCAR E-MAIL AQUI ]</a></div>
+                    </div>
+                    <div class="contact-item">
+                      <div class="ic">📷</div>
+                      <div><b>Instagram</b><br><a class="placeholder" href="#">[ COLOCAR @ DO INSTAGRAM AQUI ]</a></div>
+                    </div>
+                  </div>
+
+                  <div class="contact-card">
+                    <h3>Diagnóstico gratuito</h3>
+      <p>Fale direto com a Flag pelo WhatsApp e receba uma leitura honesta do seu momento atual — sem enrolação.</p>
+                    <a class="btn-primary" style="display:block; text-align:center;" href="#">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="footer-brand">
+      <svg viewBox="0 0 474 520" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18,0 L474,0 L346,159 L18,159 Q0,159 0,141 L0,18 Q0,0 18,0 Z" fill="#eeeded"/>
+                      <path d="M18,198 L186,198 L0,520 L0,216 Q0,198 18,198 Z" fill="#eeeded"/>
+                    </svg>
+                    <span class="brand">FLAG</span>
+                  </div>
+                  <div>© <span id="year"></span> Flag Assessoria de Marketing · Volta Redonda - RJ · CNPJ 66.276.990/0001-01</div>
+                </div>
+              </footer>
+
+              <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+  </body>
+  </html>
+  
